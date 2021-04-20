@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 def get_data(points, seed=None):
     if seed != None:
-        np.random.seed(2)
+        np.random.seed(seed)
     
     data = np.random.rand(points, 2)
     stop_adding_i = (points - 1) // 2
